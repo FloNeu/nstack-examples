@@ -13,7 +13,7 @@ api: |
   type Category = Text
   type Score = Double
   type MovieRecord = (Text, Text, Double)
-  type MovieRecordImage = {title: $Title, category: $Category, score: $Score, poster: [Byte]}
+  type MovieRecordImage = {title: Text, category: Text, score: Double, poster: [Byte]}
   interface Default {
     getMoviePoster : $MovieRecord -> $MovieRecordImage
   }
